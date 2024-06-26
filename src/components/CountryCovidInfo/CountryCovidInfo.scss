@@ -1,0 +1,18 @@
+@import "../../global.scss";
+
+.text {
+  width: 150px;
+}
+
+.modes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  cursor: pointer;
+
+  .mode-button {
+    font-weight: 600;
+    color: red;
+    text-decoration: underline;
+  }
+}
