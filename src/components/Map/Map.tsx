@@ -98,14 +98,19 @@ function Map() {
         if (country && country !== "Unknown location") {
           setLoading(true);
 
-          const response = await fetch(
-            `https://disease.sh/v3/covid-19/countries/${country}`
-          );
+          try {
+            const response = await fetch(
+              `https://disease.sh/v3/covid-19/countries/${country}`
+            );
 
-          const responseJson = await response.json();
+            const responseJson = await response.json();
 
-          setCovidData(responseJson);
-          setLoading(false);
+            setCovidData(responseJson);
+            setLoading(false);
+          } catch (err) {
+            console.log("ERRRRRR");
+            console.log("oh shit! ", err);
+          }
         }
       });
     }

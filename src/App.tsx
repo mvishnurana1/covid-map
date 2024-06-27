@@ -23,13 +23,14 @@ function App() {
 
   return (
     <div>
-      {landingPage && (
+      {landingPage ? (
         <LandingPage
           setLandingPage={setLandingPage}
           landingPage={landingPage}
         />
+      ) : (
+        <Map />
       )}
-      <Map />
     </div>
   );
 }
