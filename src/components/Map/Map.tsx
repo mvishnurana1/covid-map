@@ -108,8 +108,7 @@ function Map() {
             setCovidData(responseJson);
             setLoading(false);
           } catch (err) {
-            console.log("ERRRRRR");
-            console.log("oh shit! ", err);
+            throw err;
           }
         }
       });
