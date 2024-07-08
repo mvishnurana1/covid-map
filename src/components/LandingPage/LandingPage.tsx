@@ -37,12 +37,13 @@ const LandingPage: React.FC<landingPageProps> = ({
         <div
           style={{
             alignItems: "center",
+            color: "black",
             display: "flex",
-            justifyContent: "center",
-            width: "100%",
-            height: "100vh",
             flexDirection: "column",
             gap: "2rem",
+            height: "100vh",
+            justifyContent: "center",
+            width: "100%",
           }}
         >
           <div
